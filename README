@@ -1,0 +1,16 @@
+
+BOUT++ examples
+
+This repository contains examples which can be compiled using BOUT++.
+To compile, you will need to also download a copy of BOUT++
+
+git clone git@github.com:boutproject/BOUT-dev.git
+git clone git@github.com:boutproject/examples.git
+
+First compile BOUT++ (see user manual), then compile these examples:
+
+cd examples/6field-simple
+make BOUT_TOP=../../BOUT-dev
+
+where BOUT_TOP specifies where to find the BOUT++ directory containing a `make.config` file.
+
